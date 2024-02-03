@@ -60,5 +60,10 @@ This is a mini e-commerce application built with Flutter for the front end and P
 - PHP
 - MySQL
 - XAMPP
+## Screenshots
+
+
+
+![Screenshot_2024 02 03_18 08 17 236](https://github.com/ashrafabdu96/mini_ecommerce/assets/157527434/8f8586fa-2648-45ff-ac45-5d7b28b7558e)
 
 
