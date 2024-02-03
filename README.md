@@ -61,11 +61,4 @@ This is a mini e-commerce application built with Flutter for the front end and P
 - MySQL
 - XAMPP
 
-## Contributing
-
-Feel free to contribute to the project by opening issues or submitting pull requests.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
 
