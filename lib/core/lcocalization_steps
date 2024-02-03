@@ -1,0 +1,36 @@
+steps to add the localization in my app
+1-Specify the languages the the app will be supported in the
+MaterialApp(
+ // step one => supportedLocales: const [
+        //The Languages that the app supports
+        Locale('en'),
+        Locale('ar'),
+      ],),
+
+  2-make json files of my languages
+  3-Specify the delegates:
+ localizationsDelegates: const [
+        GlobalMaterialLocalizations
+            .delegate, //Responsible for translating some texts in Material
+        GlobalWidgetsLocalizations
+            .delegate, //Responsible for the direction of the elements
+        GlobalCupertinoLocalizations
+            .delegate, // Responsible for translating some texts in Cupertino
+      ],
+  4-Specify the app language base on specific condition in :
+  localeResolutionCallback:
+          (Locale? currentDeviceLocal, Iterable<Locale> supportedLocals) {
+        // this for To prevent the return of an unsupported language in the application.
+        for (var supportedLocal in supportedLocals) {
+          if (currentDeviceLocal != null &&
+              supportedLocal.languageCode == currentDeviceLocal.languageCode) {
+            return currentDeviceLocal;
+          }
+          return supportedLocals.first;
+        }
+      },
+   5-translate my texts between my supported languages by doing:
+        5-1- we will do custom delegate its responsible is translating
+         the texts in the app by downloading the texts from json Files
+        AppLocalizations.delegate and delegate is a class so we will create class for that
+        5-2-

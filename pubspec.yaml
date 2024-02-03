@@ -1,0 +1,63 @@
+name: mini_ecommerce
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.18.4 <3.3.7"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  flutter_localizations:
+    sdk: flutter
+
+
+  cupertino_icons: ^1.0.2
+  shared_preferences: ^2.0.15
+  flutter_bloc: ^8.1.1
+  flutter_otp_text_field: ^1.0.1
+  device_preview: ^1.1.0
+  equatable: ^2.0.5
+  dartz: ^0.10.1
+  http: ^0.13.5
+  get_it: ^7.2.0
+  flutter_svg: ^1.1.6
+  flutter_rating_bar: ^4.0.1
+  fluttertoast: ^8.1.2
+  image_picker: ^0.8.6
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/lang/en.json
+    - assets/lang/ar.json
+    - assets/images/
+
+  fonts:
+    - family: Cairo
+      fonts:
+        - asset: assets/fonts/Cairo/static/Cairo-Regular.ttf
+        - asset: assets/fonts/Cairo/static/Cairo-SemiBold.ttf
+          weight: 700
+
+    - family: PlatyFairDisplay
+      fonts:
+        - asset: assets/fonts/PlatyFairDisplay/static/PlayfairDisplay-Regular.ttf
+        - asset: assets/fonts/PlatyFairDisplay/static/PlayfairDisplay-SemiBold.ttf
+          weight: 700
+
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
