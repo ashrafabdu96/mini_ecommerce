@@ -1,16 +1,71 @@
-# mini_ecommerce
+# Mini E-Commerce Flutter App
 
-A new Flutter project.
+## Description
+
+This is a mini e-commerce application built with Flutter for the front end and PHP/MySQL for the backend. The app allows users to browse products, add items to the cart, and place orders. The server-side is set up using XAMPP to host a local MySQL database.
+
+## Features
+
+- User authentication
+- Product listing with details
+- Shopping cart functionality
+- Order placement and tracking
+
+## Prerequisites
+
+- Flutter SDK: [Install Flutter](https://flutter.dev/docs/get-started/install)
+- XAMPP: [Install XAMPP](https://www.apachefriends.org/index.html)
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+1. Clone the repository:
 
-A few resources to get you started if this is your first Flutter project:
+    ```bash
+    git@github.com:ashrafabdu96/mini_ecommerce.git
+    ```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+2. Start the XAMPP server and import the provided MySQL database script.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+3. Update the backend URL in the Flutter app:
+
+    Open `lib/core/constants/api_links.dart` and modify the `kLinkServer` variable put your ip localhost:
+
+    ```dart
+    class ApiLinks {
+    //in my case
+      static const String kLinkServer = "http://172.28.0.1/ecommerce";
+    }
+    ```
+
+4. Install dependencies:
+
+    ```bash
+    cd mini_ecommerce
+    flutter pub get
+    ```
+
+5. Run the Flutter app:
+
+    ```bash
+    flutter run
+    ```
+
+## Backend project
+- `backend/`: git@github.com:ashrafabdu96/ecommerce.git 
+- `database/`: ecommerce/sqlfiles/e_commerce.sql
+
+## Technologies Used
+
+- Flutter (Dart)
+- PHP
+- MySQL
+- XAMPP
+
+## Contributing
+
+Feel free to contribute to the project by opening issues or submitting pull requests.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
